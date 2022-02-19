@@ -1,7 +1,7 @@
 # Maintainer: Torsten Keßler <t dot kessler at posteo dot de>
 # Contributor: acxz <akashpatel2008 at yahoo dot com>
 pkgname=migraphx
-pkgver=5.0.0
+pkgver=5.0.1
 pkgrel=1
 pkgdesc="AMD's graph optimization engine"
 arch=('x86_64')
@@ -11,7 +11,7 @@ depends=('hip' 'miopen' 'protobuf' 'msgpack-cxx' 'blaze')
 makedepends=('cmake' 'rocm-cmake' 'nlohmann-json' 'half' 'pybind11')
 _git='https://github.com/ROCmSoftwarePlatform/AMDMIGraphX'
 source=("$pkgname-$pkgver.tar.gz::$_git/archive/rocm-$pkgver.tar.gz")
-sha256sums=('779a91ccfa4c2576251189f0c646ff7707c3646319c7d5dd137872beb52d2953')
+sha256sums=('ff9c10ed0ae6f388e5d23ee5c3a7c0db49deebbbd45b9a1f2e6b4a99934271b1')
 _dirname="$(basename "$_git")-$(basename "${source[0]}" ".tar.gz")"
 
 build() {
